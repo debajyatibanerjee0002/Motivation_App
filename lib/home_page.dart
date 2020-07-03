@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:quotes/motivation.dart';
+
 import 'package:quotes/quote_card.dart';
 import 'package:quotes/quote_list.dart';
+import 'package:quotes/webview.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -28,7 +29,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton.extended(
           onPressed: () => Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Motivation())),
+              context, MaterialPageRoute(builder: (context) => Webview())),
           label: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
