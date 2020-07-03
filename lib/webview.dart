@@ -9,7 +9,10 @@ class Webview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: WebviewScaffold(url: url),
+      child: WebviewScaffold(
+          bottomNavigationBar:
+              FloatingActionButton(onPressed: () => Navigator.pop(context)),
+          url: url),
     );
   }
 }
